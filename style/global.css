@@ -31,6 +31,19 @@ a{
   /* O inherit erda as fontes do container pai*/
   color: inherit;
 }
+h1, h2, h3{
+  font: inherit;
+}
+.container{
+  max-width: 1280px;
+  padding-inline: 32px;
+}
 a:hover{
   color: var(--brand-color-light);
+}
+.grid{
+  display: grid;
+}
+.grid-flow-col{
+  grid-auto-flow: column;
 }

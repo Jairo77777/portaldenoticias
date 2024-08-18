@@ -24,7 +24,10 @@
     bottom: 0;
 
     padding: 24px;
-    
+    /*nesse  exemplo precisei aplicar o padding diferente nos cards menores e paara isso ultilizamos a tag has que basicamente fala que vamos colocar um padding de 12 px no texto dos cards quando a sua fonte for a etxt-lg*/
+    &:has(.text-lg){
+      padding: 12px;
+    }
     h2{
       margin-top: 8px;
     }

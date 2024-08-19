@@ -25,7 +25,9 @@ body{
   font: var(--text);
   color:var(--text-color-primary);
   background: var(--bg-color);
+  
 }
+
 a{
   text-decoration:none;
   /* O inherit erda as fontes do container pai*/
@@ -41,13 +43,23 @@ img{
 .container{
   max-width: 1280px;
   padding-inline: 32px;
+  margin-inline: auto;
 }
 a:hover{
   color: var(--brand-color-light);
 }
 main{
+  grid-row: center;
   margin-top: 40px;
-  gap: 80px;
+  row-gap: 80px;
+  column-gap: 32px;
+  grid-template-columns:2fr 1.5fr;
+
+  grid-template-areas: 
+  "featured featured"
+  "weekly weekly"
+  "ai aside";
+
 }
 .content-tag{
   display: inline-block;
